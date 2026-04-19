@@ -4,32 +4,41 @@
 
 ## 🌟 Overview
 
-**ResuMatch** is a state-of-the-art, full-stack MERN application designed to empower job seekers with AI-driven insights. It provides deep resume analysis, ATS (Applicant Tracking System) optimization, and instant professional template generation—all protected by military-grade security and multi-factor authentication.
+**ResuMatch** is a full-stack MERN application designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). It provides deep resume analysis, real-time scoring, and professional template generation, all secured with multi-factor authentication (MFA).
 
 ---
 
-## ✨ Key Features
+## ✨ Features (V1.0)
 
 ### 📄 Intelligent Resume Parsing
-*   **Multi-Format Support**: Seamlessly process **PDF** and **DOCX** files.
-*   **AI Extraction**: Utilizes advanced regex and structured parsing to extract name, contact info, skills, experience, and education from raw text.
-*   **Dynamic Mapping**: Converts unstructured resumes into clean, actionable JSON data.
+*   **PDF & DOCX Support**: Seamlessly upload and process your resume.
+*   **Structured Extraction**: Automatically identifies `name`, `email`, `phone`, `skills`, `experience`, `education`, and `projects` using advanced regex patterns.
 
 ### 📊 Precision ATS Scoring
-*   **Multi-Dimensional Analysis**: Evaluates resumes across 8 critical dimensions.
-*   **Real-time Insights**: Get an instant **0–100 ATS Score** with a grade (Excellent, Good, Average, etc.).
-*   **Actionable Feedback**: Receive specific "Positives" and "Areas for Improvement" to help beat the bots.
+*   **Score Calculation**: A real-time 0–100 score based on 8 critical resume dimensions.
+*   **Actionable Feedback**: Real-time "Positives" and "Improvements" suggestions to help you rank higher.
+*   **Grade Labeling**: Instant grading (Excellent, Good, Average, etc.) to gauge your readiness.
 
-### 🔐 Ironclad Security
-*   **JWT & MFA**: Secure authentication with JSON Web Tokens and Time-based One-Time Passwords (TOTP) via Google Authenticator.
-*   **Data Encryption**: All Personally Identifiable Information (PII) is encrypted using **AES-256-CBC**.
-*   **Safe Storage**: Industry-standard **bcrypt** password hashing with 12 salt rounds.
-*   **Advanced Middleware**: Integrated protection against NoSQL injection, brute force attacks, and XSS.
+### 🎨 Professional Resume Generation
+*   **6 Modern Templates**: Choose from a variety of distinct, industry-standard designs.
+*   **Auto-Population**: Your parsed resume data automatically fills the template of your choice.
+*   **One-Click Download**: Generate polished, recruitment-ready PDFs.
 
-### 🎨 Instant Resume Generation
-*   **Professional Templates**: Choose from 6 distinct, modern designs.
-*   **Auto-Population**: Your parsed resume data or user profile automatically fills the templates perfectly.
-*   **One-Click PDF**: Download polished resumes ready for application.
+### 🔐 Security & Privacy
+*   **MFA (TOTP)**: Secure your account with Google Authenticator using QR-code-based Multi-Factor Authentication.
+*   **Data Encryption**: All Personally Identifiable Information (PII) is encrypted with **AES-256-CBC**.
+*   **Secure Infrastructure**: Protected by **Helmet**, **express-mongo-sanitize**, and **rate-limiting**.
+*   **Authentication**: JWT-based login with hashed passwords using **bcrypt**.
+
+---
+
+## 🚀 Future Improvements
+
+*   **AI Integration**: Leverage GPT-4 to generate tailored professional summaries and experience descriptions.
+*   **Job Matching**: Recommend matching job roles based on parsed skills and experience.
+*   **Interview Prep**: Integrated AI-chatbot to simulate interviews based on your uploaded resume.
+*   **Analytics Dashboard**: Track resume performance and score improvements over time.
+*   **Export Formats**: Support for more export formats like JSON and Plain Text.
 
 ---
 
@@ -37,14 +46,14 @@
 
 <div align="center">
 
-| Component | technologies |
+| Component | Technologies |
 | :--- | :--- |
-| **Frontend** | React 18, Ant Design, Bootstrap 5, Framer Motion |
+| **Frontend** | React, Ant Design, Bootstrap, Framer Motion |
 | **Backend** | Node.js, Express.js |
 | **Database** | MongoDB Atlas, Mongoose |
 | **Security** | JWT, Speakeasy (MFA), Crypto.js, Helmet |
-| **Parsing** | pdf-parse, Mammoth, Custom Resume Parser |
-| **DevOps** | Docker, Docker Compose, Winston Logging |
+| **Parsing** | pdf-parse, Mammoth |
+| **DevOps** | Docker, Docker Compose, Winston |
 
 </div>
 
@@ -53,10 +62,8 @@
 ## 🚦 Getting Started
 
 ### Prerequisites
-
 *   Node.js (v18+)
 *   MongoDB (Local or Atlas)
-*   npm or yarn
 
 ### Installation
 
@@ -92,33 +99,12 @@
 
 ---
 
-## 🐳 Docker Deployment
-
-Run the entire ecosystem with a single command:
-
-```bash
-docker-compose up --build
-```
-
----
-
-## 🛡️ Security Compliance (OWASP Alignment)
-
-| Vulnerability | Mitigation Strategy |
-| :--- | :--- |
-| **Broken Access Control** | JWT-based route protection & user-scoped data access. |
-| **Cryptographic Failures** | AES-256-CBC for PII; bcrypt for secure secrets. |
-| **Injection** | express-mongo-sanitize & input normalization. |
-| **Auth Failures** | Multi-Factor Authentication (TOTP) & brute-force rate limiting. |
-
----
-
 ## 👤 Author
 
 **Nidhi Gupta**
-*   Full Stack Developer | Security Enthusiast | MERN Specialist
-*   [GitHub](https://github.com/Nidhigupta2203) | [LinkedIn](https://www.linkedin.com/in/nidhi-gupta-2203/)
+*   Full Stack Developer | MERN Specialist
+*   [GitHub](https://github.com/Nidhigupta2203)
 
 ---
 
-<p align="center">Made with ❤️ for the Job Hunting community.</p>
+<p align="center">Made with ❤️ for job seekers everywhere.</p>
