@@ -62,8 +62,8 @@
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/Nidhigupta2203/ResuMatch.git
-    cd ResuMatch
+    git clone https://github.com/Nidhigupta2203/ResuMatch-.git
+    cd ResuMatch-
     ```
 
 2.  **Install Dependencies**
