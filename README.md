@@ -1,7 +1,5 @@
 # 🚀 ResuMatch — AI-Powered Resume Ecosystem
 
-![ResuMatch Banner](./assets/banner.png)
-
 ## 🌟 Overview
 
 **ResuMatch** is a full-stack MERN application designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). It provides deep resume analysis, real-time scoring, and professional template generation, all secured with multi-factor authentication (MFA).
