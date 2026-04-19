@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif !important;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+}
+
+/* Loader center */
+.ant-spin {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* Textarea styling */
+.row .col-md-12 textarea {
+  border-radius: 10px !important;
+  padding: 10px !important;
+  border: 1px solid #334155 !important;
+  background-color: #1e293b !important;
+  color: white !important;
+}
+
+.row .col-md-12 textarea:focus {
+  border: 1px solid #6366f1 !important;
+  box-shadow: 0 0 5px #6366f1 !important;
+}
+
+/* Upload button */
+.ant-btn-dashed {
+  width: 220px !important;
+  border-radius: 10px !important;
+  border: 2px dashed #6366f1 !important;
+  color: #6366f1 !important;
+}
+
+/* Headings */
+.update-profile label,
+h5 {
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+/* Update Button */
+.btnupdt {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6) !important;
+  color: white !important;
+  border-radius: 10px !important;
+  padding: 8px 15px !important;
+  transition: 0.3s ease;
+}
+
+.btnupdt:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #4f46e5, #7c3aed) !important;
+}
+
+/* Divider styles */
+.divider {
+  width: 90%;
+  height: 2px;
+  background: linear-gradient(to right, #6366f1, #22c55e);
+}
+
+.divider1 {
+  width: 100%;
+  height: 50px;
+  background-color: #020617;
+}
+
+.divider2 {
+  margin: 0 10px;
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background-color: #475569 !important;
+}
+
+/* Generic button */
+.btn1 {
+  border-radius: 8px;
+  border: 1px solid #64748b;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.btn1:hover {
+  background-color: #334155;
+  color: white;
+}
+
+/* Card style (NEW) */
+.card-custom {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth transitions applied specifically instead of globally to avoid breaking UI components */
+a, button, .template, .btnupdt {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Ant-Design Fixes for Dark Mode */
+.ant-form-item-label > label {
+  color: #f1f5f9 !important;
+  font-size: 15px !important;
+}
+
+.ant-tabs-tab {
+  color: #94a3b8 !important;
+  font-size: 16px !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #6366f1 !important;
+  text-shadow: 0 0 0.25px currentcolor;
+}
+
+.ant-tabs-tab:hover {
+  color: #cbd5e1 !important;
+}
+
+/* Print Utility */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

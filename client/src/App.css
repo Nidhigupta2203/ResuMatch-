@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+}
+
+/* Main app container */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #6366f1;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #8b5cf6;
+}
+
+/* Buttons global */
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Container utility */
+.container-custom {
+  padding: 20px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Card style */
+.card-custom {
+  background: #1e293b;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.2s ease-in-out;
+}

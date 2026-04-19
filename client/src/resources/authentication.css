@@ -1,0 +1,130 @@
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 8px;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Login Page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+/* Login Box */
+.login-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  max-width: 1000px;
+  background: #1e293b;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+/* Form Section */
+#login-form {
+  flex: 1 0 100%;
+  max-width: 480px;
+  width: 100%;
+  padding: 60px;
+}
+
+/* Title */
+#login-form p.form-title {
+  color: #f1f5f9;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Subtitle (NEW) */
+#login-form p.subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+/* Input Fields */
+#login-form .ant-input-affix-wrapper {
+  padding: 12px 15px;
+  border-radius: 10px;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  color: white;
+}
+
+#login-form .ant-input-affix-wrapper:focus,
+#login-form .ant-input-affix-wrapper-focused {
+  border-color: #6366f1;
+  box-shadow: 0 0 5px #6366f1;
+}
+
+/* Button */
+#login-form .ant-btn {
+  height: 45px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+#login-form .ant-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+/* Illustration Section */
+.illustration-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  min-height: 100%;
+  background: #020617;
+}
+
+.illustration-wrapper img {
+  width: 80%;
+}
+
+/* Responsive */
+@media screen and (max-width: 1023px) {
+  .login-box {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .illustration-wrapper {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  #login-form {
+    max-width: 100%;
+  }
+}
