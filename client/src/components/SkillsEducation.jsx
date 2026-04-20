@@ -22,7 +22,8 @@ function SkillsEducation() {
   const user = JSON.parse(localStorage.getItem("resume-user")) || {};
   // fetch colleges
   useEffect(() => {
-    fetch(`http://localhost:5000/api/colleges?query=${value}`)
+    const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+    fetch(`${apiUrl}/api/colleges?query=${value}`)
       .then((res) => res.json())
       .then((data) => {
         setCollegeList(data);

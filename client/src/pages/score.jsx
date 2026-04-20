@@ -6,8 +6,9 @@ async function Score() {
 
   try {
     const [value, setValue] = useState("");
+    const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
     const res = await fetch(
-      `http://localhost:5000/api/colleges?query=${value}`,
+      `${apiUrl}/api/colleges?query=${value}`,
     );
     const data = await res.json();
 

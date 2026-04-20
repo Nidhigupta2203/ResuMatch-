@@ -81,7 +81,8 @@ function FileUpload() {
       const formData = new FormData();
       formData.append("resume", file);
 
-      const res = await fetch("http://localhost:5000/api/resume/upload", {
+      const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+      const res = await fetch(`${apiUrl}/api/resume/upload`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
