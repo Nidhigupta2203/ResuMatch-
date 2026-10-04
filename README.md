@@ -1,4 +1,4 @@
-# 🚀 ResuMatch — AI-Powered Resume Ecosystem
+# ResuMatch – ATS Scoring & Resume Builder
 
 ## 🌟 Overview
 
